@@ -1,0 +1,60 @@
+Question 1:
+-----------
+12
+
+Question 2:
+-----------
+(n-1)
+
+Question 3:
+-----------
+If there is no null terminator the computer wont know how umch memory is needed so it may interfere with other memory blocks within program
+
+Question 7:
+-----------
+int main(){
+    char buffer[10];
+    std::string str ("Hello World!");               // created hello world string
+    std::size_t length = str.copy(buffer,6,6);   // What this does is go to position 6 in the previous string and then goes 6 spaces and copies giving you world!
+    buffer[length]= '\0';                       // This cuts off to the null
+    std::cout << buffer << std::endl;           //Prints what was copied
+    return 0;
+}
+
+This will output -- World!
+
+Question 8:
+-----------
+void swapStrings(std::string& str1, std::string& str2) { // Function to swap the contents of two strings
+    str1.swap(str2); // Use the swap() function to exchange the contents of str1 and str2
+}
+
+int main() {
+    std::string txt1 = "Hello";   // string in var text1
+    std::string txt2 = "Computer";  // string in var text2
+
+    std::cout << "Text1: " << txt1 << std::endl;
+    std::cout << "Text2: " << txt2 << std::endl;
+
+    swapStrings(txt1, txt2); // Call the swapStrings function to swap the strings
+
+
+    std::cout << "Txt1: " << txt1 << std::endl;
+    std::cout << "Txt2: " << txt2 << std::endl;
+
+    return 0;
+}
+
+
+Question 9:
+-----------
+int main(){
+
+    std::string str1("Hello World! ");
+    std::string str2("Goodbye World! ");   // Created the two strings
+    std::string str3 = str1.insert(6, str2, 0, 8);  // what this doe is makes a new string str3 that is the first string but at 6 spaces in it starts to insert the second string but onyl 0 to 8
+    // When it inserts 0 - 8 we get Goodbye
+    std::cout << str3;  //This prints out Hello Goodbye World!
+}
+
+The multiple versions are used to handle diffrent data types used and to be flexable for many uses for developers.
