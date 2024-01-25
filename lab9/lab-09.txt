@@ -1,0 +1,75 @@
+Question 1:
+-----------
+The stack grows as its creating the branches part of the fib tree
+
+Question 2:
+-----------
+At the end of a branch is when the stack starts to shrink
+
+
+
+Question 3:
+-----------
+
+                                        foo(6)
+
+                               /          |                  \
+                            foo(3)      foo(4)              foo(5)
+                    = 3              /    |    \            /      |      \
+                                foo(1)  foo(2) foo(3)    foo(2) foo(3)  foo(4)
+                                       = 6                              /       |       \
+                                                                    foo(1)  foo(2)  foo(3)
+                                                                     = 6+3+2  = 11
+so this tree equals 20 (3+6+11)
+
+Question 4:
+-----------
+
+
+                                                    fact(5)
+                                                 /           \
+                                             5 *            fact(4)
+                                                          /         \
+                                                        4*          fact(3)
+                                                                   /       \
+                                                                3*          fact(2)
+3 recursive calls
+
+Question 5:
+-----------
+
+                                    sum_digits(12345)
+                                    /               \
+                                5 +             sum_digits(1234)
+                                                /               \
+                                            4 +                 sum_digits(123)
+                                                                /              \
+                                                            3 +             sum_digits(12)
+                                                                            /           \
+                                                                         2 +           sum_digits(1)
+                                                                                            1 = 15 (5+4+3+2+1)
+4 recursive calls
+Question 6:
+-----------
+                                    palindrome(tacocat)
+                                    /               \
+                                True               palindrome(acoca)
+                                                    /              \
+                                                True            palindrome(coc)
+                                                                /           \
+                                                            True            palindrome(o)
+2 Recursive calls
+
+Question 7:
+-----------
+
+                                is_sorted([1,2,3,4,5,6,2])
+                                                        \
+                                                        is_sorted([2,3,4,5,6,2])
+                                                                                \
+                                                                                is_sorted([3,4,5,6,2])
+                                                                                                    \
+                                                                                                    is_sorted([4,5,6,2])
+3 recursive calls!
+
+

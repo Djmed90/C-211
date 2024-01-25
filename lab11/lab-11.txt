@@ -1,0 +1,58 @@
+Question 1:
+-----------
+
+class Point{
+    private:
+        int x;
+        int y;
+        int z;
+    public:
+        Point(); // Default constructor
+        Point(int someX, int someY,int someZ); // Param constructor
+
+        void setX(int someX);
+        void setY(int someY);
+        void setz(int someZ);
+
+        int getX();
+        int getY();
+        int getZ();
+
+        std::string toCord();
+
+        double euDistance (Point p2)
+}
+
+Question 2:
+-----------
+
+class Car{
+
+    private:
+    std::sting make;
+    std::sting model;
+    std::sting color;
+    int year;
+    double milage;
+
+    public:
+    Car(std::string make, std::string model, std::string color, int year);
+
+    void setMake(std::string someMake);
+    void setModel(std::string someModel);
+    void setColor(std::string someColor);
+    void setYear(int someYear);
+    void setMileage(double someMileage);
+
+    std::string getMake();
+    std::string getModel();
+    std::string getColor();
+    int getYear();
+    double getMileage();
+
+    void printDetails();
+}
+
+Question 3:
+-----------
+

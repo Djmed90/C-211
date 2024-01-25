@@ -1,0 +1,42 @@
+Question 1:
+------------
+To get the program to print 10 using i is to first make it so i <= 10 in the loop so it stops on 10 and not stop before 10
+As well as take a new variable that holds i so when program ends it prints 10
+
+#include <iostream>
+
+int main(){
+    int num;
+        for (int i = 0 ; i <= 10 ; ++i) {
+        num = i;
+    }
+     std::cout << num << std::endl;
+
+    return 0;
+}
+
+
+
+Question 2:
+------------
+What you can do for it to be infinite for loop is to keep making i = 0 at the end of the loop thus making it never end
+
+Question 3:
+------------
+The loop would be infinite since i subtracts by one then incriments by one making it stay the same value 1 - 1 = 0 ! to fix this error get rid of the --i; incriment.
+
+Question 4:
+------------
+Change the continue to a break and it will leave the loop and return a 10 instead of what it was doing before and infinitly loping
+
+Question 5:
+------------
+There needs to be curly brackets after the for loop and then put the if statement into the loop body
+
+Question 6:
+------------
+You have to change the while loop conditional to i != 0 instead of !i which doesnt work for this and the loop never gets entered
+
+Question 7:
+------------
+sum would equal 140

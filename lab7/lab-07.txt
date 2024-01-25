@@ -1,0 +1,58 @@
+Question 1:
+-----------
+#include <iostream>
+void square(int* a){
+    *a = (*a) * (*a);
+}
+
+int main(){
+    int a = 2;
+    square(&a);
+    std::cout << a << std::endl;
+}
+
+
+Question 2:
+-----------
+
+#include <iostream>
+void countEvens(int* a, int myArray[]){
+    for(int i = 0; i < 8; ++i){
+        if(myArray[i] % 2 == 0){
+            *a += 1;
+            std::cout << a <<std::endl;
+        }
+    }
+}
+
+int main(){
+    int a = 0;
+    int myArray[] = {1,2,3,4,5,6,7,8};
+    countEvens(&a,myArray);
+    std::cout << a << std::endl;
+    }
+
+Question 3:
+-----------
+35
+
+Question 4:
+-----------
+1: a = 21, b = 12
+2: a = 21, b = 12
+3: a = 1, b = 3
+
+Question 5:
+-----------
+void fillArray(int** arr, int arrSize) {
+    for (int i = 0; i < arrSize; i++) {
+        for (int j = 0; j < arrSize; j++) {
+            arr[i][j] = (i + 1) * (j + 1);
+        }
+    }
+}
+
+Question 7:
+-----------
+The delete[] command is eleasing the memory allocated for th array
+if we used just a delete it would delete only 1 element allocated not whole array

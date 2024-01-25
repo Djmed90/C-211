@@ -1,0 +1,23 @@
+Question 1:
+-----------
+f6 would equal 8
+
+Question 2:
+-----------
+The tree would start at the top being 6 and split into 5 and 4
+then the 5 would split into 4 and 3
+and the 4 would split into 3 and 2
+now the tree is bigger with those 4 numbers splitting in 2
+
+                6
+               / \
+               5  4
+              /\  /\
+             4  3 3  2
+            / \ /\ /\ /\
+           3 2 2 1 2 1 1 1
+
+Keeps going until 0 and 1 at bottom of tree
+
+IM doing ODDS
+Jay is doing EVENS 

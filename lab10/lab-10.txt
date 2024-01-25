@@ -1,0 +1,68 @@
+Question 1:
+-----------
+There will be 22 swaps made to sort sequence
+
+Question 2:
+-----------
+There will be 8 swaps made to sort sequence
+
+Question 3:
+-----------
+No insertion sort is not faster than the previous 2 because they all have a worse case time complexity of O(n^2)
+
+
+Part 4:
+
+Question 3:
+-----------
+
+Question 4:
+------------
+int findmin(int array[], int size){
+    int min = array[0];
+    for(int i = 0; i < size; i++){
+        if(array[i]< min){
+            min = array[i];
+        }
+
+    }
+    return min;
+}
+
+ALSO IN program1.cpp
+
+Question 5:
+-----------
+
+int findMaxIndex(int array[], int size){
+    int max = array[0];
+    int maxIndex = 0;
+    for(int i = 0; i < size; i++){
+        if(array[i] > max){
+            max = array[i];
+            maxIndex = i;
+        }
+
+    }
+    return maxIndex;
+}
+
+ALSO in program2.cpp
+
+Question 6:
+-----------
+#include <iostream>
+
+int calculateMedian(int array[], int size){
+    int median = 0;
+    if(size % 2 == 0){
+        int middle = array[size/2] + array[size/2 + 1];
+        median = middle / 2;
+    }
+    else{
+        median = array[size/2];
+    }
+    return median;
+}
+
+ALSO in program3.cpp

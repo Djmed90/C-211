@@ -1,0 +1,42 @@
+Question 1:
+-----------
+My value for x was 32600 this is because the breakpint stopped right before we gave x a value so it was a random number
+
+Question 2:
+-----------
+We trace the program similar to the debugger execpt for variables getting random numbers before they are assigned a value.
+
+Question 3:
+-----------
+First block is main and its result = 0
+second block gets added on and its plus_one with param of 0 that returns 1 then get put off stack
+we go back to main and add two more blocks the first being plus_two the second on top of plus two being plus_one
+once plus one is finished its knocked off then plus_two is knocked off finishing with main
+
+Question 4:
+-----------
+I was not really suprised I would say I was very accurate in my first guess
+
+Question 5:
+-----------
+The return type of main is int
+
+Question 6:
+-----------
+There are no parameters
+
+Question 7:
+-----------
+The function does not return a value
+
+Question 8:
+-----------
+You can use a return statement in a void function but it wont return value
+
+Question 9:
+-----------
+The functions are called after the main so when it compiles from top to bottom it sees the function run and has not seen it been declared
+
+Question 10:
+-----------
+5 11 14
